@@ -1,7 +1,7 @@
 .ui.message 
 	button.ui.button(href="#") Читать
 	| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id eaque dolorum quas nemo, asperiores aperiam quibusdam quo, molestias consequatur.
-.ui.three.column.stackable.grid.container.segment
+.ui.three.column.stackable.grid.segment
 	.column
 		h2 Игр за день
 		p 27
@@ -11,14 +11,20 @@
 	.column
 		h2 Онлайн игроков
 		p 83
-.ui.doubling.six.cards.row
+.ui.doubling.six.cards
 	.card.yellow
-		.card__header Room 2
-		.card__price $0.1 - $1
+		.item		 
+			.floating.ui.red.label 22
+		.content
+			.header Room 2
+			.meta $0.1 - $1
 	.card.red
-		.card__header Room 2
-		.card__price $0.1 - $1
+		.content
+			.meta Room 2
+			.header $0.1 - $1
 	.card.green
+		.item
+			.floating.ui.blue.label 2
 		.card__header Room 2
 		.card__price $0.1 - $1
 	.card.blue
@@ -28,10 +34,12 @@
 		.card__header Room 2
 		.card__price $0.1 - $1
 	.card.orange
+		.item
+			.floating.ui.orange.label 32
 		.card__header Room 2
 		.card__price $0.1 - $1
 
-.ui.container.segment
+.ui.segment
 	h2 Афиша Игр
 	table.ui.celled.table
 		thead
@@ -48,104 +56,163 @@
 				td 
 					button.ui.button.primary Вступить в игру
 			tr
-				td Cell
-				td Cell
-				td Cell
-				td Cell
+				td 5
+				td $4.32
+				td 00:01:36
+				td 
+					button.ui.button.red.basic Вступить в игру
 			tr
-				td Cell
-				td Cell
-				td Cell
-				td Cell
+				td 5
+				td $4.32
+				td 00:01:36
+				td 
+					button.ui.button.green.tiny Вступить в игру
+			tr
+				td 5
+				td $4.32
+				td 00:01:36
+				td 
+					button.ui.button.teal.small Вступить в игру
 
-.ui.segment
-	h3 Комментарии:
-	.ui.list
-		.item
-			img.ui.avatar.image(src='http://placebeard.it/20/20')
-			|			
-			.content
-				a.header Rachel
-				|				
-				.description
-					| Last seen watching 
-					a
-						b Arrested Development
-					|	just now.
-		.item
-			img.ui.avatar.image(src='http://placebeard.it/20/20')
-			|			
-			.content
-				a.header Rachel
-				|				
-				.description
-					| Last seen watching 
-					a
-						b Arrested Development
-					|	just now.
-		.item
-			img.ui.avatar.image(src='http://placebeard.it/20/20')
-			|			
-			.content
-				a.header Rachel
-				|				
-				.description
-					| Last seen watching 
-					a
-						b Arrested Development
-					|	just now.
-		.item
-			img.ui.avatar.image(src='http://placebeard.it/20/20')
-			|			
-			.content
-				a.header Rachel
-				|				
-				.description
-					| Last seen watching 
-					a
-						b Arrested Development
-					|	just now.
-		.item
-			img.ui.avatar.image(src='http://placebeard.it/20/20')
-			|			
-			.content
-				a.header Rachel
-				|				
-				.description
-					| Last seen watching 
-					a
-						b Arrested Development
-					|	just now.
-		.item
-			img.ui.avatar.image(src='http://placebeard.it/20/20')
-			|			
-			.content
-				a.header Rachel
-				|				
-				.description
-					| Last seen watching 
-					a
-						b Arrested Development
-					|	just now.
-		.item
-			img.ui.avatar.image(src='http://placebeard.it/20/20')
-			|			
-			.content
-				a.header Rachel
-				|				
-				.description
-					| Last seen watching 
-					a
-						b Arrested Development
-					|	just now.
-		.item
-			img.ui.avatar.image(src='http://placebeard.it/20/20')
-			|			
-			.content
-				a.header Rachel
-				|				
-				.description
-					| Last seen watching 
-					a
-						b Arrested Development
-					|	just now.
+.ui.visible.right.sidebar.vertical
+	.ui.segment
+		h3 Комментарии:
+		.ui.list
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/20/20')
+				|			
+				.content
+					a.header Rachel
+					|				
+					.description
+						| Last seen watching 
+						a
+							b Arrested Development
+						|	just now.
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/20/20')
+				|			
+				.content
+					a.header Rachel
+					|				
+					.description
+						| Last seen watching 
+						a
+							b Arrested Development
+						|	just now.
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/20/20')
+				|			
+				.content
+					a.header Rachel
+					|				
+					.description
+						| Last seen watching 
+						a
+							b Arrested Development
+						|	just now.
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/20/20')
+				|			
+				.content
+					a.header Rachel
+					|				
+					.description
+						| Last seen watching 
+						a
+							b Arrested Development
+						|	just now.
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/20/20')
+				|			
+				.content
+					a.header Rachel
+					|				
+					.description
+						| Last seen watching 
+						a
+							b Arrested Development
+						|	just now.
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/20/20')
+				|			
+				.content
+					a.header Rachel
+					|				
+					.description
+						| Last seen watching 
+						a
+							b Arrested Development
+						|	just now.
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/20/20')
+				|			
+				.content
+					a.header Rachel
+					|				
+					.description
+						| Last seen watching 
+						a
+							b Arrested Development
+						|	just now.
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/20/20')
+				|			
+				.content
+					a.header Rachel
+					|				
+					.description
+						| Last seen watching 
+						a
+							b Arrested Development
+						|	just now.
+			a(href="#").ui.basic.button.tiny
+				i.icon.plus
+				| добавить
+			a(href="#").ui.tiny.right.floated
+				| Все&nbsp;комментарии
+	.ui.segment
+		h3 Победители:
+		.ui.middle.aligned.animated.list
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/40/40')
+				|			
+				.content
+					.header $27.20
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/40/40')
+				|			
+				.content
+					.header $27.20
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/40/40')
+				|			
+				.content
+					.header $27.20
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/40/40')
+				|			
+				.content
+					.header $27.20
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/40/40')
+				|			
+				.content
+					.header $27.20
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/40/40')
+				|			
+				.content
+					.header $27.20
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/40/40')
+				|			
+				.content
+					.header $27.20
+			.item
+				img.ui.avatar.image(src='http://placebeard.it/40/40')
+				|			
+				.content
+					.header $27.20
+			a(href="#").ui.tiny.right.floated.button
+				| Все победители
