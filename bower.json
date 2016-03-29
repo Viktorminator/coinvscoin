@@ -1,8 +1,7 @@
 {
   "name": "semwasp",
   "version": "0.2.0",
-  "authors": [
-  ],
+  "authors": [],
   "moduleType": [
     "globals"
   ],
@@ -12,6 +11,7 @@
     "semantic-ui": ">=2.0.0"
   },
   "dependencies": {
-    "semantic-ui": ">=2.0.0"
+    "semantic-ui": ">=2.0.0",
+    "famfamfam-flags": "^1.0.0"
   }
 }

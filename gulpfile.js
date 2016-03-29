@@ -164,6 +164,7 @@ gulp.task('dev', ['style', 'templates', 'images', 'scripts','coffee'], function 
     gulp.watch('./src/img/*.+(gif|ico|jpg|jpeg|png)', ['img-watch']);
     gulp.watch('./src/scss/*.scss', ['css-watch']);
     gulp.watch('./src/*.jade', ['jade-watch']);
+    gulp.watch('./src/components/*.jade', ['jade-watch']);
     gulp.watch('./src/includes/*.jade', ['jade-watch']);
     gulp.watch('./src/*.(html|htm|xhtml)', ['html-watch']); //in case there will be HTML
     gulp.watch('./src/includes/*.(html|htm|xhtml)', ['html-watch']); //in case there will be HTML
