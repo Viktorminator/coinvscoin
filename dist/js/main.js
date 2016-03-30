@@ -39,8 +39,12 @@
   });
 
   $('#comments').on('click', function() {
-    $('.ui.right.sidebar.vertical').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
-    return console.log('sidebar');
+    return $('#sidebar').sidebar({
+      transition: 'overlay',
+      dimPage: false,
+      debug: true,
+      pushable: false
+    }).sidebar('show');
   });
 
 }).call(this);
