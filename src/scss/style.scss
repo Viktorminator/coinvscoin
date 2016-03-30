@@ -16,4 +16,16 @@ body {
 }
 .spaced > .button {
     margin-bottom: 1em;
-  }
+}
+.text.container {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+
+.text.container .left.floated.image {
+    margin: 2em 2em 2em -4em;
+}
+.text.container .right.floated.image {
+    margin: 2em -4em 2em 2em;
+}
