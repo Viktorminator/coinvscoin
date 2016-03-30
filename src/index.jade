@@ -18,9 +18,10 @@ html(lang="en")
   body
     include ./components/sidebar.jade
     .pusher
-      .content
-        include ./components/menu.jade
-        include ./components/content.jade
+      .ui.content
+        .ui.container
+          include ./components/menu.jade
+          include ./components/content.jade
 
     
   // build:js js/vendor.js
