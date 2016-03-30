@@ -1,0 +1,40 @@
+doctype html
+html(lang="ru")
+  head
+    // build:css css/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    
+    // build:css css/plugins.css
+    link(rel="stylesheet", type="text/css", href='../bower_components/semantic-ui/dist/semantic.min.css')
+    // endbuild
+    // bower:css
+    // endbower
+    // build:css css/style.css
+    link(rel="stylesheet", type="text/css", href='css/style.css')
+    // endbuild
+    title Semantic UI Front-End Page
+  body
+    include ./components/menu-top.jade
+    .ui.text.container
+      h2.ui.header История
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit porro exercitationem, labore odit, similique maiores sapiente mollitia quisquam dolorem, ipsam beatae nostrum. Aperiam rerum repellat atque facilis pariatur! Tempora ab suscipit unde, exercitationem recusandae non mollitia fuga sapiente, ipsam fugit autem quae commodi explicabo, ea at! Minus aliquam nobis deserunt consequuntur cupiditate dolor rem, odit dolores laudantium aperiam eos, odio exercitationem ab iure cum, earum eveniet saepe rerum modi dignissimos. Itaque atque, consectetur laborum esse odio praesentium ipsam nobis qui necessitatibus, molestias cumque. Suscipit quae alias in dignissimos, odit necessitatibus, ipsum aut deserunt nulla non laudantium fuga sunt ducimus aperiam cumque voluptatem rerum consequuntur ex est dolore nostrum? 
+      p Quasi, cum iste eum itaque unde voluptates id assumenda maxime fuga, corporis distinctio eos ipsam atque. Accusantium iste commodi ab iure labore debitis quod! Dolorem voluptatem, est modi quo eius, dolore reiciendis nisi voluptate veniam quos adipisci consectetur quas! Culpa nam nostrum quo, placeat labore doloremque blanditiis velit porro iusto quibusdam. Quaerat necessitatibus corporis quasi. Rem odio quia itaque quasi in tempore obcaecati aliquid, ut at nesciunt doloremque deleniti atque earum porro voluptatem aut facilis tenetur quos blanditiis! Voluptatem placeat ullam quasi quisquam assumenda modi est, voluptates hic magni, corporis, nisi cupiditate.
+      img.ui.medium.left.floated.image.transition.visible(data-src='http://placehold.it/300/300', src='http://placehold.it/500/500')
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit porro exercitationem, labore odit, similique maiores sapiente mollitia quisquam dolorem, ipsam beatae nostrum. Aperiam rerum repellat atque facilis pariatur! Tempora ab suscipit unde, exercitationem recusandae non mollitia fuga sapiente, ipsam fugit autem quae commodi explicabo, ea at! Minus aliquam nobis deserunt consequuntur cupiditate dolor rem, odit dolores laudantium aperiam eos, odio exercitationem a
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit porro exercitationem, labore odit, similique maiores sapiente mollitia quisquam dolorem, ipsam beatae nostrum. Aperiam rerum repellat atque facilis pariatur! Tempora ab suscipit unde, exercitationem recusandae non mollitia fuga sapiente, ipsam fugit autem quae commodi explicabo, ea at! Minus aliquam nobis deserunt consequuntur cupiditate dolor rem, odit dolores laudantium aperiam eos, odio exercitationem a
+      img.ui.medium.right.floated.image.transition.visible(data-src='http://placehold.it/300/300', src='http://placehold.it/500/500')
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit porro exercitationem, labore odit, similique maiores sapiente mollitia quisquam dolorem, ipsam beatae nostrum. Aperiam rerum repellat atque facilis pariatur! Tempora ab suscipit unde, exercitationem recusandae non mollitia fuga sapiente, ipsam fugit autem quae commodi explicabo, ea at! Minus aliquam nobis deserunt consequuntur cupiditate dolor rem, odit dolores laudantium aperiam eos, odio exercitationem a
+    include ./components/menu-bottom.jade
+
+    
+  // build:js js/vendor.js
+  // bower:js
+  // endbower
+  //endbuild
+  // build:js js/plugins.js
+  // endbuild
+  // build:js js/main.js
+  script(type='text/javascript', src='js/main.js')
+  // endbuild
