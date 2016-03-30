@@ -16,126 +16,7 @@
     <title>Semantic UI Front-End Page</title>
   </head>
   <body>
-    <div class="ui menu">
-      <div class="item"><img src="https://placehold.it/100x20" height="20"></div>
-      <div class="right menu"><a class="item">РЕГИСТРАЦИЯ</a><a class="item">ВХОД</a>
-        <div class="item">
-          <div class="ui inline dropdown">
-            <div class="text"><img src="/img/ru.png" width="16" height="11" class="ui image">      ru</div><i class="dropdown icon"></i>
-            <div class="menu">
-              <div class="item"><img src="/img/ru.png" width="16" height="11" class="ui image">        ru</div>
-              <div class="item"><img src="/img/england.png" width="16" height="11" class="ui image">        en</div>
-              <div class="item"><img src="/img/fr.png" width="16" height="11" class="ui image">        fr</div>
-              <div class="item"><img src="/img/pl.png" width="16" height="11" class="ui image">        pl</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ui message"> 
-      <button href="#" class="ui button">Читать</button>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id eaque dolorum quas nemo, asperiores aperiam quibusdam quo, molestias consequatur.
-    </div>
-    <div class="ui three column stackable grid segment">
-      <div class="column">
-        <h2>Игр за день</h2>
-        <p>27</p>
-      </div>
-      <div class="column">
-        <h2>Макс. выигрыш</h2>
-        <p>$ 196,55</p>
-      </div>
-      <div class="column">
-        <h2>Онлайн игроков</h2>
-        <p>83</p>
-      </div>
-    </div>
-    <div class="ui doubling six cards">
-      <div class="card yellow">
-        <div class="item">		 
-          <div class="floating ui red label">22</div>
-        </div>
-        <div class="content">
-          <div class="header">Room 2</div>
-          <div class="meta">$0.1 - $1</div>
-        </div>
-      </div>
-      <div class="card red">
-        <div class="content">
-          <div class="meta">Room 2</div>
-          <div class="header">$0.1 - $1</div>
-        </div>
-      </div>
-      <div class="card green">
-        <div class="item">
-          <div class="floating ui blue label">2</div>
-        </div>
-        <div class="card__header">Room 2</div>
-        <div class="card__price">$0.1 - $1</div>
-      </div>
-      <div class="card blue">
-        <div class="card__header">Room 2</div>
-        <div class="card__price">$0.1 - $1</div>
-      </div>
-      <div class="card olive">
-        <div class="card__header">Room 2</div>
-        <div class="card__price">$0.1 - $1</div>
-      </div>
-      <div class="card orange">
-        <div class="item">
-          <div class="floating ui orange label">32</div>
-        </div>
-        <div class="card__header">Room 2</div>
-        <div class="card__price">$0.1 - $1</div>
-      </div>
-    </div>
-    <div class="ui segment">
-      <h2>Афиша Игр</h2>
-      <table class="ui celled table">
-        <thead>
-          <tr>
-            <th>Человек</th>
-            <th>Ставка</th>
-            <th>До старта</th>
-            <th>Действия</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>5</td>
-            <td>$4.32</td>
-            <td>00:01:36</td>
-            <td> 
-              <button class="ui button primary">Вступить в игру</button>
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>$4.32</td>
-            <td>00:01:36</td>
-            <td> 
-              <button class="ui button red basic">Вступить в игру</button>
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>$4.32</td>
-            <td>00:01:36</td>
-            <td> 
-              <button class="ui button green tiny">Вступить в игру</button>
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>$4.32</td>
-            <td>00:01:36</td>
-            <td> 
-              <button class="ui button teal small">Вступить в игру</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="ui visible right sidebar vertical">
+    <div class="ui visible right sidebar vertical overlay">
       <div class="ui segment">
         <h3>Комментарии:</h3>
         <div class="ui list">
@@ -224,6 +105,134 @@
               <div class="header">$27.20</div>
             </div>
           </div><a href="#" class="ui tiny right floated button">Все победители</a>
+        </div>
+      </div>
+    </div>
+    <div class="pusher">
+      <div class="content">
+        <div class="ui menu">
+          <div class="item"><img src="https://placehold.it/100x20" height="20"></div>
+          <div class="right menu"><a class="item">РЕГИСТРАЦИЯ</a><a class="item">ВХОД</a><a class="item">ВЫХОД</a><a class="item">
+              <div class="ui avatar image"><img src="http://placebeard.it/44/44"></div>
+              <div class="middle aligned content">
+                <div class="header">Valentin</div>
+              </div></a><a id="comments" data-transition="overlay" class="item"><i class="ui icon comment"></i>
+              <div class="ui red label right">2</div></a>
+            <div class="item">
+              <div class="ui inline dropdown">
+                <div class="text"><img src="/img/ru.png" width="16" height="11" class="ui image">      ru</div><i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item"><img src="/img/ru.png" width="16" height="11" class="ui image">        ru</div>
+                  <div class="item"><img src="/img/england.png" width="16" height="11" class="ui image">        en</div>
+                  <div class="item"><img src="/img/fr.png" width="16" height="11" class="ui image">        fr</div>
+                  <div class="item"><img src="/img/pl.png" width="16" height="11" class="ui image">        pl</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui message"> 
+          <button href="#" class="ui button">Читать</button>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id eaque dolorum quas nemo, asperiores aperiam quibusdam quo, molestias consequatur.
+        </div>
+        <div class="ui three column stackable grid segment">
+          <div class="column">
+            <h2>Игр за день</h2>
+            <p>27</p>
+          </div>
+          <div class="column">
+            <h2>Макс. выигрыш</h2>
+            <p>$ 196,55</p>
+          </div>
+          <div class="column">
+            <h2>Онлайн игроков</h2>
+            <p>83</p>
+          </div>
+        </div>
+        <div class="ui doubling six cards">
+          <div class="card yellow">
+            <div class="item">		 
+              <div class="floating ui red label">22</div>
+            </div>
+            <div class="content">
+              <div class="header">Room 2</div>
+              <div class="meta">$0.1 - $1</div>
+            </div>
+          </div>
+          <div class="card red">
+            <div class="content">
+              <div class="meta">Room 2</div>
+              <div class="header">$0.1 - $1</div>
+            </div>
+          </div>
+          <div class="card green">
+            <div class="item">
+              <div class="floating ui blue label">2</div>
+            </div>
+            <div class="card__header">Room 2</div>
+            <div class="card__price">$0.1 - $1</div>
+          </div>
+          <div class="card blue">
+            <div class="card__header">Room 2</div>
+            <div class="card__price">$0.1 - $1</div>
+          </div>
+          <div class="card olive">
+            <div class="card__header">Room 2</div>
+            <div class="card__price">$0.1 - $1</div>
+          </div>
+          <div class="card orange">
+            <div class="item">
+              <div class="floating ui orange label">32</div>
+            </div>
+            <div class="card__header">Room 2</div>
+            <div class="card__price">$0.1 - $1</div>
+          </div>
+        </div>
+        <div class="ui segment">
+          <h2>Афиша Игр</h2>
+          <table class="ui celled table">
+            <thead>
+              <tr>
+                <th>Человек</th>
+                <th>Ставка</th>
+                <th>До старта</th>
+                <th>Действия</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td>$4.32</td>
+                <td>00:01:36</td>
+                <td> 
+                  <button class="ui button primary">Вступить в игру</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>$4.32</td>
+                <td>00:01:36</td>
+                <td> 
+                  <button class="ui button red basic">Вступить в игру</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>$4.32</td>
+                <td>00:01:36</td>
+                <td> 
+                  <button class="ui button green tiny">Вступить в игру</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>$4.32</td>
+                <td>00:01:36</td>
+                <td> 
+                  <button class="ui button teal small">Вступить в игру</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

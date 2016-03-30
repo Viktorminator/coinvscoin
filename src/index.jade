@@ -16,8 +16,11 @@ html(lang="en")
     // endbuild
     title Semantic UI Front-End Page
   body
-    include ./components/menu.jade
-    include ./components/content.jade
+    include ./components/sidebar.jade
+    .pusher
+      .content
+        include ./components/menu.jade
+        include ./components/content.jade
 
     
   // build:js js/vendor.js

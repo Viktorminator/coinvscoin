@@ -38,4 +38,9 @@
     });
   });
 
+  $('#comments').on('click', function() {
+    $('.ui.right.sidebar.vertical').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+    return console.log('sidebar');
+  });
+
 }).call(this);

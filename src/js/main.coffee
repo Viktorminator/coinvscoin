@@ -16,3 +16,6 @@ $('.ui:not(.container, .grid)').each ->
     exclusive: true
     content: $(this).attr('class')
   return
+$('#comments').on 'click', ->
+	$('.ui.right.sidebar.vertical').sidebar('setting', 'transition', 'overlay').sidebar 'toggle'
+	console.log('sidebar')
