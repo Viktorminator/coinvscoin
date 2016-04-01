@@ -30,48 +30,79 @@
     </div>
     <div class="ui main content container">
       <h2 class="ui header">Личный кабинет</h2>
-      <div class="ui secondary pointing menu"><a class="item active">Личный кабинет</a><a class="item">Управление счетом</a><a class="item">Рефералы</a>
+      <div class="ui secondary pointing menu"><a data-tab="first" class="item active">Личный кабинет</a><a data-tab="second" class="item">Управление счетом</a><a data-tab="third" class="item">Рефералы</a>
         <div class="right menu"><a class="ui item">Выйти</a></div>
       </div>
-      <div class="ui segment">
-        <form action="#" type="post" class="ui form">
-          <div class="two fields">
-            <div class="field">
-              <label class="label">Имя</label>
-              <input type="text" name="shipping[first-name]" placeholder="Имя">
-            </div>
-            <div class="field">
-              <label class="label">Фамилия</label>
-              <input type="text" name="shipping[last-name]" placeholder="Фамилия">
+      <div data-tab="first" class="ui bottom tab segment active">
+        <div class="ui two columns grid">
+          <div class="six wide column">
+            <div class="ui two fields">
+              <div class="field"><img src="http://placebeard.it/400x400" class="ui image fluid"><a href="#" class="ui bottom attached button">Загрузить аватар</a></div>
+              <div class="field"><img src="http://placebeard.it/50x50"><a href="#" class="ui bottom attached button">Загрузить документ подтверждающий личность</a></div>
             </div>
           </div>
-          <div class="two fields">
-            <div class="field">
-              <label class="label">Страна</label>
-              <input type="text" name="shipping[country]" placeholder="Страна">
-            </div>
-            <div class="field">
-              <label class="label">Город</label>
-              <input type="text" name="shipping[city]" placeholder="Город">
-            </div>
+          <div class="ten wide column">
+            <h2 class="ui header">Майкл Хьюстон</h2>
+            <form action="#" type="post" class="ui form">
+              <div class="two fields">
+                <div class="field">
+                  <label class="label">Имя</label>
+                  <input type="text" name="shipping[first-name]" placeholder="Имя">
+                </div>
+                <div class="field">
+                  <label class="label">Фамилия</label>
+                  <input type="text" name="shipping[last-name]" placeholder="Фамилия">
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <label class="label">Страна</label>
+                  <input type="text" name="shipping[country]" placeholder="Страна">
+                </div>
+                <div class="field">
+                  <label class="label">Город</label>
+                  <input type="text" name="shipping[city]" placeholder="Город">
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <label class="label">E-mail</label>
+                  <input type="email" placeholder="Email">
+                </div>
+                <div class="field">
+                  <label class="label">Телефон</label>
+                  <input type="text" placeholder="Телефон">
+                </div>
+              </div>
+              <div class="two fields">
+                <div class="field">
+                  <label class="label">Новый пароль</label>
+                  <input type="password" name="shipping[password]" placeholder="Введите новый пароль">
+                </div>
+                <div class="field">
+                  <label class="label">Язык по-умолчанию</label>
+                  <div class="ui dropdown">
+                    <div class="text"><img src="/img/ru.png" width="16" height="11" class="ui image">      ru</div><i class="dropdown icon"></i>
+                    <div class="menu">
+                      <div class="item"><img src="/img/ru.png" width="16" height="11" class="ui image">        ru</div>
+                      <div class="item"><img src="/img/england.png" width="16" height="11" class="ui image">        en</div>
+                      <div class="item"><img src="/img/fr.png" width="16" height="11" class="ui image">        fr</div>
+                      <div class="item"><img src="/img/pl.png" width="16" height="11" class="ui image">        pl</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui divider"></div><a href="#" class="link">Правила игры</a>
+              <div class="ui checkbox">
+                <input type="checkbox" name="example">
+                <label>Я согласен с правилами игры</label>
+              </div><a href="#" class="ui right button floated orange">Обновить информацию</a>
+            </form>
           </div>
-          <div class="two fields">
-            <div class="field">
-              <label class="label">E-mail</label>
-              <input type="email" placeholder="Email">
-            </div>
-            <div class="field">
-              <label class="label">Телефон</label>
-              <input type="text" placeholder="Телефон">
-            </div>
-          </div>
-          <div class="ui divider"></div><a href="#" class="link">Правила игры</a>
-          <div class="ui checkbox">
-            <input type="checkbox" name="example">
-            <label>Я согласен с правилами игры</label>
-          </div><a href="#" class="ui right button floated orange">Обновить информацию</a>
-        </form>
+        </div>
       </div>
+      <div data-tab="second" class="ui bottom tab segment">Second</div>
+      <div data-tab="third" class="ui bottom tab segment">Third</div>
     </div>
     <div class="ui bottom fixed menu">
       <div class="ui container"><a href="/index.html" class="item">ГЛАВНАЯ</a><a href="/o-nas.html" class="item">О НАС</a><a href="/putevoditel.html" class="item">ПУТЕВОДИТЕЛЬ</a><a href="/istoriya.html" class="item">ИСТОРИЯ</a><a href="/novosti.html" class="item">НОВОСТИ</a><a href="/kontakti.html" class="item">КОНТАКТЫ</a></div>

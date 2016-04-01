@@ -22,45 +22,87 @@ html(lang="ru")
     .ui.main.content.container
       h2.ui.header Личный кабинет
       .ui.secondary.pointing.menu
-        a.item.active
+        a.item.active(data-tab='first')
           | Личный кабинет
-        a.item
+        a.item(data-tab='second')
           | Управление счетом
-        a.item
+        a.item(data-tab='third')
           | Рефералы
         .right.menu
           a.ui.item
             | Выйти
-      .ui.segment
-        form.ui.form(action='#', type='post')
-            .two.fields
+      .ui.bottom.tab.segment.active(data-tab='first')
+        .ui.two.columns.grid
+          .six.wide.column
+            .ui.two.fields
               .field
-                label.label Имя
-                input(type='text', name='shipping[first-name]', placeholder='Имя')
+                img(src='http://placebeard.it/400x400').ui.image.fluid
+                a(href="#").ui.bottom.attached.button
+                  | Загрузить аватар
               .field
-                label.label Фамилия
-                input(type='text', name='shipping[last-name]', placeholder='Фамилия')
-            .two.fields
-              .field
-                label.label Страна
-                input(type='text', name='shipping[country]', placeholder='Страна')
-              .field
-                label.label Город
-                input(type='text', name='shipping[city]', placeholder='Город')
-            .two.fields
-              .field
-                label.label E-mail
-                input(type='email', placeholder='Email')
-              .field
-                label.label Телефон
-                input(type='text', placeholder='Телефон')
-            .ui.divider
-            a(href="#").link Правила игры
-            .ui.checkbox
-              input(type='checkbox', name='example')
-              label Я согласен с правилами игры
-            a(href="#").ui.right.button.floated.orange Обновить информацию
+                img(src='http://placebeard.it/50x50')
+                a(href="#").ui.bottom.attached.button
+                  | Загрузить документ подтверждающий личность
 
+          .ten.wide.column
+            h2.ui.header Майкл Хьюстон
+            form.ui.form(action='#', type='post')
+              .two.fields
+                .field
+                  label.label Имя
+                  input(type='text', name='shipping[first-name]', placeholder='Имя')
+                .field
+                  label.label Фамилия
+                  input(type='text', name='shipping[last-name]', placeholder='Фамилия')
+              .two.fields
+                .field
+                  label.label Страна
+                  input(type='text', name='shipping[country]', placeholder='Страна')
+                .field
+                  label.label Город
+                  input(type='text', name='shipping[city]', placeholder='Город')
+              .two.fields
+                .field
+                  label.label E-mail
+                  input(type='email', placeholder='Email')
+                .field
+                  label.label Телефон
+                  input(type='text', placeholder='Телефон')
+              .two.fields
+                .field
+                  label.label Новый пароль
+                  input(type='password', name='shipping[password]', placeholder='Введите новый пароль')
+                .field
+                  label.label Язык по-умолчанию
+                  
+                  .ui.dropdown
+                    .text
+                      img.ui.image(src="/img/ru.png" width="16" height="11")
+                      |       ru
+                    i.dropdown.icon
+                    .menu
+                      .item
+                        img.ui.image(src="/img/ru.png" width="16" height="11")
+                        |         ru
+                      .item
+                        img.ui.image(src="/img/england.png" width="16" height="11")
+                        |         en
+                      .item
+                        img.ui.image(src="/img/fr.png" width="16" height="11")
+                        |         fr
+                      .item
+                        img.ui.image(src="/img/pl.png" width="16" height="11")
+                        |         pl
+              .ui.divider
+              a(href="#").link Правила игры
+              .ui.checkbox
+                input(type='checkbox', name='example')
+                label Я согласен с правилами игры
+              a(href="#").ui.right.button.floated.orange Обновить информацию
+      .ui.bottom.tab.segment(data-tab='second')
+        | Second
+      .ui.bottom.tab.segment(data-tab='third')
+        | Third
     include ./components/menu-bottom.jade
 
     

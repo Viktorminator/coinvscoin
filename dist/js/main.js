@@ -37,4 +37,6 @@
     }).sidebar('toggle');
   });
 
+  $('.pointing.menu .item').tab();
+
 }).call(this);
