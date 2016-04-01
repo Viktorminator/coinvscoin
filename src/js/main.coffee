@@ -17,4 +17,4 @@ $('.ui:not(.container, .grid)').each ->
     content: $(this).attr('class')
   return
 $('#comments').on 'click', ->
-	$('#sidebar').sidebar({ transition: 'overlay', dimPage: false, debug: true, pushable: false}).sidebar 'show'
+	$('#sidebar').sidebar({ transition: 'push', dimPage: false, debug: true}).sidebar 'toggle'

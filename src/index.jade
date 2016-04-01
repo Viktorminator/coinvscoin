@@ -13,12 +13,13 @@ html(lang="ru")
     // endbower
     // build:css css/style.css
     link(rel="stylesheet", type="text/css", href='css/style.css')
+    link(rel="stylesheet", type="text/css", href='css/site.css')
     // endbuild
     title Semantic UI Front-End Page
   body
     include ./components/sidebar.jade
     .pusher
-      .ui.content
+      .ui.content.main
         .ui.container
           include ./components/menu.jade
           include ./components/content.jade

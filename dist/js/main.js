@@ -40,11 +40,10 @@
 
   $('#comments').on('click', function() {
     return $('#sidebar').sidebar({
-      transition: 'overlay',
+      transition: 'push',
       dimPage: false,
-      debug: true,
-      pushable: false
-    }).sidebar('show');
+      debug: true
+    }).sidebar('toggle');
   });
 
 }).call(this);
