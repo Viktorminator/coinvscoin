@@ -29,15 +29,6 @@
     on: 'hover'
   });
 
-  $('.ui:not(.container, .grid)').each(function() {
-    $(this).popup({
-      on: 'hover',
-      variation: 'small inverted',
-      exclusive: true,
-      content: $(this).attr('class')
-    });
-  });
-
   $('#comments').on('click', function() {
     return $('#sidebar').sidebar({
       transition: 'push',
