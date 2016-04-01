@@ -1,0 +1,75 @@
+
+doctype html
+html(lang="ru")
+  head
+    // build:css css/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    
+    // build:css css/plugins.css
+    link(rel="stylesheet", type="text/css", href='../bower_components/semantic-ui/dist/semantic.min.css')
+    // endbuild
+    // bower:css
+    // endbower
+    // build:css css/style.css
+    link(rel="stylesheet", type="text/css", href='css/style.css')
+    link(rel="stylesheet", type="text/css", href='css/site.css')
+    // endbuild
+    title Semantic UI Front-End Page
+  body
+    include ./components/menu-top.jade
+    .ui.main.content.container
+      h2.ui.header Личный кабинет
+      .ui.secondary.pointing.menu
+        a.item.active
+          | Личный кабинет
+        a.item
+          | Управление счетом
+        a.item
+          | Рефералы
+        .right.menu
+          a.ui.item
+            | Выйти
+      .ui.segment
+        form.ui.form(action='#', type='post')
+            .two.fields
+              .field
+                label.label Имя
+                input(type='text', name='shipping[first-name]', placeholder='Имя')
+              .field
+                label.label Фамилия
+                input(type='text', name='shipping[last-name]', placeholder='Фамилия')
+            .two.fields
+              .field
+                label.label Страна
+                input(type='text', name='shipping[country]', placeholder='Страна')
+              .field
+                label.label Город
+                input(type='text', name='shipping[city]', placeholder='Город')
+            .two.fields
+              .field
+                label.label E-mail
+                input(type='email', placeholder='Email')
+              .field
+                label.label Телефон
+                input(type='text', placeholder='Телефон')
+            .ui.divider
+            a(href="#").link Правила игры
+            .ui.checkbox
+              input(type='checkbox', name='example')
+              label Я согласен с правилами игры
+            a(href="#").ui.right.button.floated.orange Обновить информацию
+
+    include ./components/menu-bottom.jade
+
+    
+  // build:js js/vendor.js
+  // bower:js
+  // endbower
+  //endbuild
+  // build:js js/plugins.js
+  // endbuild
+  // build:js js/main.js
+  script(type='text/javascript', src='js/main.js')
+  // endbuild
