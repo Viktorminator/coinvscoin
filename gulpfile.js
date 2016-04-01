@@ -28,7 +28,20 @@ var /* BEGIN ENVIRONMENT CONFIG */
     gulpif              = require('gulp-if'),
     paths               = { 
                             fonts: ['./bower_components/semantic-ui/dist/themes/**']
-                          };
+                          },
+    fs = require('fs'),
+    GulpSSH = require('gulp-ssh'),
+    config = {
+      host: '46.101.174.175',
+      port: 22,
+      username: '',
+      password: ''
+    },
+    gulpSSH = new GulpSSH({
+      ignoreErrors: false,
+      sshConfig: config
+    });
+
 
 /**
  * Check to see if --vars were set.
@@ -173,6 +186,13 @@ gulp.task('dev', ['style', 'templates', 'images', 'scripts','coffee'], function 
     gulputil.log(gulputil.colors.inverse("All done! We're up and running."));
 });
 
+
+gulp.task('dest', ['style', 'templates', 'images', 'scripts','coffee'], function () {
+  return gulp
+    .src(['./dist/**'])
+    .pipe(gulpSSH.dest('/html/public/'))
+    
+});
 
 /**
  * Default task
