@@ -13,74 +13,80 @@ html(lang="ru")
     // endbower
     // build:css css/style.css
     link(rel="stylesheet", type="text/css", href='css/style.css')
+    link(rel="stylesheet", type="text/css", href='css/site.css')
     // endbuild
     title Semantic UI Front-End Page
   body
-    include ./components/menu-top.jade
-    .ui.text.container
-      h2.ui.header Новости
-      .ui.two.cards
-        .ui.card
-          img(src='http://placehold.it/400x200/218').image
-          .content
-            h3.ui.header Новость один
-            .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
-          .extra.content
-            .right.floated
-              a(href="/novost.html") подробнее
-        .ui.card
-          img(src='http://placehold.it/400x200/218').image
-          .content
-            h3.ui.header Новость один
-            .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
-          .extra.content
-            .right.floated
-              a(href="/novost.html") подробнее
-        .ui.card
-          img(src='http://placehold.it/400x200/218').image
-          .content
-            h3.ui.header Новость один
-            .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
-          .extra.content
-            .right.floated
-              a(href="/novost.html") подробнее
-        .ui.card
-          img(src='http://placehold.it/400x200/218').image
-          .content
-            h3.ui.header Новость один
-            .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
-          .extra.content
-            .right.floated
-              a(href="/novost.html") подробнее
-        .ui.card
-          img(src='http://placehold.it/400x200/218').image
-          .content
-            h3.ui.header Новость один
-            .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
-          .extra.content
-            .right.floated
-              a(href="/novost.html") подробнее
-        .ui.card
-          img(src='http://placehold.it/400x200/218').image
-          .content
-            h3.ui.header Новость один
-            .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
-          .extra.content
-            .right.floated
-              a(href="/novost.html") подробнее
-      .ui.divider
-      .ui.pagination.menu
-        a.active.item
-          | 1
-        .disabled.item
-          | ...
-        a.item
-          | 10
-        a.item
-          | 11
-        a.item
-          | 12
+    
+    .ui.content.main
+      .ui.container
+        include ./components/menu-top.jade
+        .ui.two.columns.grid
+          .ui.column.twelve.wide
+            h2.ui.header Новости
+            .ui.two.cards
+              .ui.card
+                img(src='http://placehold.it/400x200/218').image
+                .content
+                  h3.ui.header Новость один
+                  .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
+                .extra.content
+                  .right.floated
+                    a(href="/novost.html") подробнее
+              .ui.card
+                img(src='http://placehold.it/400x200/218').image
+                .content
+                  h3.ui.header Новость один
+                  .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
+                .extra.content
+                  .right.floated
+                    a(href="/novost.html") подробнее
+              .ui.card
+                img(src='http://placehold.it/400x200/218').image
+                .content
+                  h3.ui.header Новость один
+                  .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
+                .extra.content
+                  .right.floated
+                    a(href="/novost.html") подробнее
+              .ui.card
+                img(src='http://placehold.it/400x200/218').image
+                .content
+                  h3.ui.header Новость один
+                  .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
+                .extra.content
+                  .right.floated
+                    a(href="/novost.html") подробнее
+              .ui.card
+                img(src='http://placehold.it/400x200/218').image
+                .content
+                  h3.ui.header Новость один
+                  .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
+                .extra.content
+                  .right.floated
+                    a(href="/novost.html") подробнее
+              .ui.card
+                img(src='http://placehold.it/400x200/218').image
+                .content
+                  h3.ui.header Новость один
+                  .description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nesciunt enim illum excepturi soluta. Accusamus magni velit est quibusdam explicabo voluptates dolorem
+                .extra.content
+                  .right.floated
+                    a(href="/novost.html") подробнее
+            .ui.pagination.menu(id="pagination")
+              a.active.item
+                | 1
+              .disabled.item
+                | ...
+              a.item
+                | 10
+              a.item
+                | 11
+              a.item
+                | 12
 
+          .ui.column.four.wide
+            include ./components/sidebar.jade
     include ./components/menu-bottom.jade
 
     

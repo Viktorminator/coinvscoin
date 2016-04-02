@@ -17,25 +17,28 @@ html(lang="ru")
     // endbuild
     title Semantic UI Front-End Page
   body
-    include ./components/menu-top.jade
-    .ui.text.container.main
-      .ui.column
-        h2.ui.header Новость
-        img(src='http://placehold.it/400x200/218').ui.image.fluid
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit omnis praesentium, vitae incidunt tempore quaerat optio error cumque consequuntur aut numquam ipsam provident labore accusantium non officia maxime eum eligendi. Aliquam atque impedit pariatur ab autem voluptatem, minus ut in amet, nulla. Id dolores labore ut voluptatum qui. Reprehenderit aut, eum dolor qui, cumque, adipisci dicta eius obcaecati id rerum quo placeat amet similique quia impedit nostrum ipsum ullam libero minima et sunt optio. Ullam quas tempore consequatur ex voluptas! Repellat voluptas dicta facilis accusamus quod fugit, explicabo expedita, maiores sed repudiandae, eum, odit sint provident porro minus totam deleniti?
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit omnis praesentium, vitae incidunt tempore quaerat optio error cumque consequuntur aut numquam ipsam provident labore accusantium non officia maxime eum eligendi. Aliquam atque impedit pariatur ab autem voluptatem, minus ut in amet, nulla. Id dolores labore ut voluptatum qui. Reprehenderit aut, eum dolor qui, cumque, adipisci dicta eius obcaecati id rerum quo placeat amet similique quia impedit nostrum ipsum ullam libero minima et sunt optio. Ullam quas tempore consequatur ex voluptas! Repellat voluptas dicta facilis accusamus quod fugit, explicabo expedita, 
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit omnis praesentium, vitae incidunt tempore quaerat optio error cumque consequuntur aut numquam ipsam provident labore accusantium non officia maxime eum eligendi. Aliquam atque impedit pariatur ab autem voluptatem, minus ut in amet, nulla. Id dolores labore ut voluptatum qui. Reprehenderit aut, eum dolor qui, cumque, adipisci dicta eius obcaecati id rerum quo placeat amet similique quia impedit nostrum ipsum ullam libero minima et sunt optio. Ullam quas tempore consequatur ex voluptas! Repellat voluptas dicta facilis accusamus quod fugit, explicabo expedita, 
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit omnis praesentium, vitae incidunt tempore quaerat optio error cumque consequuntur aut numquam ipsam provident labore accusantium non officia maxime eum eligendi. Aliquam atque impedit pariatur ab autem voluptatem, minus ut in amet, nulla. Id dolores labore ut voluptatum qui. Reprehenderit aut, eum dolor qui, cumque, adipisci dicta eius obcaecati id rerum quo placeat amet similique quia impedit nostrum ipsum ullam libero minima et sunt optio. Ullam quas tempore consequatur ex voluptas! Repellat voluptas dicta facilis accusamus quod fugit, explicabo expedita, 
-        .three.ui.buttons
-          a(href="#").ui.left.floated.blue.basic.button
-            i.left.arrow.icon        
-            | Предыдущая новость
-          a(href="/novosti.html").ui.center.basic.blue.button Все новости
-          a(href="#").ui.right.floated.basic.blue.button
-            | Следующая новость
-            i.right.arrow.icon
+    .ui.content.main
+      .ui.container
+        include ./components/menu-top.jade
+        .ui.two.columns.grid
+          .ui.column.twelve.wide
+            h2.ui.header Новость
+            img(src='http://placehold.it/400x200/218').ui.image.fluid
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit omnis praesentium, vitae incidunt tempore quaerat optio error cumque consequuntur aut numquam ipsam provident labore accusantium non officia maxime eum eligendi. Aliquam atque impedit pariatur ab autem voluptatem, minus ut in amet, nulla. Id dolores labore ut voluptatum qui. Reprehenderit aut, eum dolor qui, cumque, adipisci dicta eius obcaecati id rerum quo placeat amet similique quia impedit nostrum ipsum ullam libero minima et sunt optio. Ullam quas tempore consequatur ex voluptas! Repellat voluptas dicta facilis accusamus quod fugit, explicabo expedita, maiores sed repudiandae, eum, odit sint provident porro minus totam deleniti?
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit omnis praesentium, vitae incidunt tempore quaerat optio error cumque consequuntur aut numquam ipsam provident labore accusantium non officia maxime eum eligendi. Aliquam atque impedit pariatur ab autem voluptatem, minus ut in amet, nulla. Id dolores labore ut voluptatum qui. Reprehenderit aut, eum dolor qui, cumque, adipisci dicta eius obcaecati id rerum quo placeat amet similique quia impedit nostrum ipsum ullam libero minima et sunt optio. Ullam quas tempore consequatur ex voluptas! Repellat voluptas dicta facilis accusamus quod fugit, explicabo expedita, 
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit omnis praesentium, vitae incidunt tempore quaerat optio error cumque consequuntur aut numquam ipsam provident labore accusantium non officia maxime eum eligendi. Aliquam atque impedit pariatur ab autem voluptatem, minus ut in amet, nulla. Id dolores labore ut voluptatum qui. Reprehenderit aut, eum dolor qui, cumque, adipisci dicta eius obcaecati id rerum quo placeat amet similique quia impedit nostrum ipsum ullam libero minima et sunt optio. Ullam quas tempore consequatur ex voluptas! Repellat voluptas dicta facilis accusamus quod fugit, explicabo expedita, 
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit omnis praesentium, vitae incidunt tempore quaerat optio error cumque consequuntur aut numquam ipsam provident labore accusantium non officia maxime eum eligendi. Aliquam atque impedit pariatur ab autem voluptatem, minus ut in amet, nulla. Id dolores labore ut voluptatum qui. Reprehenderit aut, eum dolor qui, cumque, adipisci dicta eius obcaecati id rerum quo placeat amet similique quia impedit nostrum ipsum ullam libero minima et sunt optio. Ullam quas tempore consequatur ex voluptas! Repellat voluptas dicta facilis accusamus quod fugit, explicabo expedita, 
+            .three.ui.buttons
+              a(href="#").ui.left.floated.blue.basic.button
+                i.left.arrow.icon        
+                | Предыдущая новость
+              a(href="/novosti.html").ui.center.basic.blue.button Все новости
+              a(href="#").ui.right.floated.basic.blue.button
+                | Следующая новость
+                i.right.arrow.icon
 
-
+          .ui.column.four.wide
+            include ./components/sidebar.jade
     include ./components/menu-bottom.jade
 
     
