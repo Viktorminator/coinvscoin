@@ -9,6 +9,6 @@ $('.ui.dropdown').dropdown on: 'click'
 $('.special.card .image').dimmer on: 'hover'
 $('.star.rating').rating()
 $('.card .dimmer').dimmer on: 'hover'
-$('#comments').on 'click', ->
-	$('#sidebar').sidebar({ transition: 'push', dimPage: false, debug: true}).sidebar 'toggle'
+# $('#comments').on 'click', ->
+#	$('#sidebar').sidebar({ transition: 'push', dimPage: false, debug: true}).sidebar 'toggle' 
 $('.pointing.menu .item').tab()

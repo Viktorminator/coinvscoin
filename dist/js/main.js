@@ -29,14 +29,6 @@
     on: 'hover'
   });
 
-  $('#comments').on('click', function() {
-    return $('#sidebar').sidebar({
-      transition: 'push',
-      dimPage: false,
-      debug: true
-    }).sidebar('toggle');
-  });
-
   $('.pointing.menu .item').tab();
 
 }).call(this);

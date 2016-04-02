@@ -1,75 +1,79 @@
-.ui.message 
-	button.ui.button(href="#") Читать
-	| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id eaque dolorum quas nemo, asperiores aperiam quibusdam quo, molestias consequatur.
-.ui.three.column.stackable.grid.segment
-	.column
-		h2 Игр за день
-		p 27
-	.column
-		h2 Макс. выигрыш
-		p $ 196,55
-	.column
-		h2 Онлайн игроков
-		p 83
-.ui.doubling.six.cards
-	.card.yellow
-		.item
-			.floating.ui.red.label 22
-		.content
-			.header Room 2
-			.meta $0.1 - $1
-	.card.red
-		.content
-			.meta Room 2
-			.header $0.1 - $1
-	.card.green
-		.item
-			.floating.ui.blue.label 2
-		.card__header Room 2
-		.card__price $0.1 - $1
-	.card.blue
-		.card__header Room 2
-		.card__price $0.1 - $1
-	.card.olive
-		.card__header Room 2
-		.card__price $0.1 - $1
-	.card.orange
-		.item
-			.floating.ui.orange.label 32
-		.card__header Room 2
-		.card__price $0.1 - $1
+.ui.two.columns.grid
+	.ui.column.twelve.wide
+		.ui.message 
+			button.ui.button(href="#") Читать
+			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id eaque dolorum quas nemo, asperiores aperiam quibusdam quo, molestias consequatur.
+		.ui.three.column.stackable.grid.segment
+			.column
+				h2 Игр за день
+				p 27
+			.column
+				h2 Макс. выигрыш
+				p $ 196,55
+			.column
+				h2 Онлайн игроков
+				p 83
+		.ui.doubling.six.cards
+			.card.yellow
+				.item
+					.floating.ui.red.label 22
+				.content
+					.header Room 2
+					.meta $0.1 - $1
+			.card.red
+				.content
+					.meta Room 2
+					.header $0.1 - $1
+			.card.green
+				.item
+					.floating.ui.blue.label 2
+				.card__header Room 2
+				.card__price $0.1 - $1
+			.card.blue
+				.card__header Room 2
+				.card__price $0.1 - $1
+			.card.olive
+				.card__header Room 2
+				.card__price $0.1 - $1
+			.card.orange
+				.item
+					.floating.ui.orange.label 32
+				.card__header Room 2
+				.card__price $0.1 - $1
 
-.ui.segment
-	h2 Афиша Игр
-	table.ui.celled.table
-		thead
-			tr
-				th Человек
-				th Ставка
-				th До старта
-				th Действия
-		tbody
-			tr
-				td 5
-				td $4.32
-				td 00:01:36
-				td 
-					button.ui.button.primary Вступить в игру
-			tr
-				td 5
-				td $4.32
-				td 00:01:36
-				td 
-					button.ui.button.red.basic Вступить в игру
-			tr
-				td 5
-				td $4.32
-				td 00:01:36
-				td 
-					button.ui.button.green.tiny Вступить в игру
-			tr
-				td 5
-				td $4.32
-				td 00:01:36
-				td 
-					button.ui.button.teal.small Вступить в игру
+		.ui.segment
+			h2 Афиша Игр
+			table.ui.celled.table
+				thead
+					tr
+						th Человек
+						th Ставка
+						th До старта
+						th Действия
+				tbody
+					tr
+						td 5
+						td $4.32
+						td 00:01:36
+						td 
+							button.ui.button.primary Вступить в игру
+					tr
+						td 5
+						td $4.32
+						td 00:01:36
+						td 
+							button.ui.button.red.basic Вступить в игру
+					tr
+						td 5
+						td $4.32
+						td 00:01:36
+						td 
+							button.ui.button.green.tiny Вступить в игру
+					tr
+						td 5
+						td $4.32
+						td 00:01:36
+						td 
+							button.ui.button.teal.small Вступить в игру
+	.column.four.wide
+		include ./sidebar.jade
